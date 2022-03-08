@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    background-color: #e4bcd4;
+    font-family: 'Source Code Pro', monospace;
+}
+
+  .portfolio{
+      display: block;
+      margin: auto;
+      height: 500px;
+      width: 500px;
+  }
+/*Comienzo card*/
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards li {
+    border: 2px solid #c6e1f1;
+    border-radius:5px;
+    color: #fff;
+    flex: 1 1 200px;
+  }
+  
+  .cards h2 {
+    background-color: #b5c5d7;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .cards p {
+    padding: 10px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /*grid-template-columns: repeat(auto-fill, minmax(200px 1fr));*/
+    grid-gap: 20px;
+  }
+  
+/*fin card*/
+
+ .footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e4bcd4;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  .titulo{
+      color: rgb(255, 255, 255);
+      font-size: 45px;
+      font-family: 'Balsamiq Sans', cursive;
+  }
+  .portadas{
+      width: 350px;
+      height: 250px;
+      float: left;
+  }
+  .proyecto{
+      margin: auto;
+      padding: 20px;
+      color: white;
+  }
+  .contenedor{
+      border: solid 4px #c6e1f1;
+      border-radius: 6px;
+  }
+  .link{
+      color: #d188bb;
+      font-weight: bold;
+  }
+  .segundoTitulo{
+      color: white;
+      font-weight: bold;
+  }
+
+/*posteos de*/
+  .outer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+ }
+ .inner-grid { /*inner-grid son las columnas*/
+    flex: 25%;
+    max-width: 300px;
+    padding: 0 4px;
+ }
+ .inner-grid img {
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px;
+ }
+ @media screen and (max-width: 800px) {
+    .inner-grid {
+       flex: 50%;
+       max-width: 50%;
+    }
+ }
+ @media screen and (max-width: 600px) {
+    .inner-grid {
+       flex: 100%;
+       max-width: 100%;
+    }
+ }
+ video{
+     display: block;
+     margin: auto;
+ }
+
+
+ .flex-row {
+    display: flex;
+    flex-direction: row; 
+ } 
+ .flex-col{
+  padding: 15px;
+  margin: 0 15px;
+  width: 50%;
+  }
+  .iconos{
+      margin: -00.3em;
+      padding: 3px;
+  }
