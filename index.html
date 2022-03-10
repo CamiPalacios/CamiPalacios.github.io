@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portfolio</title>
-    <link rel="shortcut icon" href="">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.png" />
     <!--CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -19,135 +20,259 @@
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <img class="portfolio" src="imagenes/compu.png" alt="">
-    <!--SOBRE MI-->
-    <div class="wrapper">
-        <h1 class="titulo">SOBRE MI </h1>
-        <ul class="grid cards">
-            <li>
-                <h2>Estudios</h2>
-                <p>Egresada de la Escuela Tecnica ORT, de la orientacion informatica y con titulo de
-                    Bachiller
-                    en Informatica con especializacion en Diseño y Desarrollo de aplicaciones Web y Moviles.
-                    Actualemente cursando el CBC
-                    para Analista de sistemas.
-                </p>
-            </li>
-            <li>
-                <h2>Habilidades</h2>
-                <p>
-                    <ion-icon name="add-outline"></ion-icon>Creatividad
-                </p>
-                <p>
-                    <ion-icon name="add-outline"></ion-icon>Liderazgo
-                </p>
-                <p>
-                    <ion-icon name="add-outline"></ion-icon>Trabajo en Equipo
-                </p>
-                <p>
-                    <ion-icon name="add-outline"></ion-icon>Comunicacion
-                </p>
-                <p>
-                    <ion-icon name="add-outline"></ion-icon>Administracion de redes sociales
-                </p>
-                <p>
-                    <ion-icon name="add-outline"></ion-icon>Diseño Web
-                </p>
-            </li>
-            <li>
-                <h2>Lenguajes de programacion</h2>
-                <p>
-                    <ion-icon name="add-outline"></ion-icon> C++
-                </p>
-                <p>
-                    <ion-icon name="add-outline"></ion-icon> JavaScript
-                </p>
-            </li>
-        </ul>
-        <br />
-        <!--PROYECTOS-->
-        <h1 class="titulo">PROYECTOS </h1>
-        <div class="contenedor">
-            <p class="proyecto"><img class="portadas" src="imagenes/edugames.png" alt="">EduGames. Plataforma
-                educativa para
-                personas con desafios en la comprension. Cuenta con juegos y videos explicativos de Lengua,
-                Matematica,
-                Ingles, Etica, Ciencias Sociales, Ciencias Naturales y Educacion Digital. <a class="link"
-                    href="https://edugames-ar.web.app/">Aqui</a> podra ver la pagina.
-            </p>
-            <br /><br />
-        </div>
-        <br />
-        <div class="contenedor">
-            <h3 class="segundoTitulo">Creacion de contenido para redes</h3>
-            <p class="proyecto">Trabaje para Parrilla 83 y Albahaca & Tomillo diseñando publicaciones para sus redes sociales.
-                Ademas ayude
-                a mi hermana mayor con su emprendimiento de venta de mermeladas realizandole el diseño de las etiquetas.
-            </p>
-            <div class="outer-grid">
-                <div class="inner-grid">
-                    <img class="portadas" src="imagenes/port_parri_sorteo.jpg">
-                </div>
-                <div class="inner-grid">
-                    <img class="portadas" src="imagenes/post_parri_navidad.jpg">
-                </div>
-                <div class="inner-grid">
-                    <img class="portadas" src="imagenes/post_albahaca_1.jpg">
-                </div>
-                <div class="inner-grid">
-                    <img class="portadas" src="imagenes/port_albahaca_2.jpg">
-                </div>
+<body id="page-top">
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="imagenes/avataaars.png" alt="..." />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">Camila Palacios</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
             </div>
-            <div class="outer-grid">
-                <div class="inner-grid">
-                    <img class="portadas" src="imagenes/etiqueta_1.png">
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Desarrolladora Web - Diseñadora UX/UI</p>
+        </div>
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Proyectos</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="imagenes/edugames.png" alt="..." />
+                    </div>
                 </div>
-                <div class="inner-grid">
-                    <img class="portadas" src="imagenes/etiqueta_2.png">
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="imagenes/redes.png" alt="..." />
+                    </div>
                 </div>
-                <div class="inner-grid">
-                    <img class="portadas" src="imagenes/etiqueta_3.png">
-                </div>
-                <div class="inner-grid">
-                    <img class="portadas" src="imagenes/etiqueta_4.png">
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="imagenes/comunicacion.png" alt="..." />
+                    </div>
                 </div>
             </div>
         </div>
-        <br />
-        <div class="contenedor">
-            <h3 class="segundoTitulo">Comunicacion y Presentacion de Proyectos</h3>
-            <p class="proyecto">
-                Gracias a ORT pude participar de proyectos como "+ Sinergia", donde debiamos presentar nuestro proyecto
-                final
-                a profesores, especialistas y otros alumnos. Con esto pude aprender no solo a saber presentar un
-                proyecto atrapando
-                la atencion de los hoyentes, sino que tambien aprendi las etapas del mismo, los informes y la esaustiva
-                investigacion
-                que se debe hacer, como realizar un analisis de mercado para ver en que destaca tu producto del resto, y
-                poder
-                organizarme de acuerdo a determinados plazos de entrega.
-            </p>
-            <video width="600" height="400" controls>
-                <source src="imagenes/sinergia.mp4" type="video/mp4">
-                <source src="imagenes/sinergia.ogv" type="video/ogg">
-            </video>
-            <p class="proyecto">Esta es la presentacion que realice junto a mi compañera de equipo para presentar
-                nuestro Proyecto.</p>
-            <br />
+    </section>
+
+
+
+
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">Sobre Mi</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <h2>Estudios</h2>
+                    <p class="lead">Egresada de la Escuela Tecnica ORT, de la orientacion informatica y 
+                        con titulo de Bachiller en Informatica con especializacion en Diseño y Desarrollo
+                        de aplicaciones Web y Moviles. Actualemente cursando el CBC para Analista de sistemas.</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <h2>Habilidades</h2>
+                    <p class="lead">Creatividad - Liderazgo - Trabajo en equipo - Administracion de redes sociales - Diseño Web</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <h2>Lenguajes de Programacion</h2>
+                    <p class="lead">C++  -  JavaScript</p>
+                </div>
+            </div>
         </div>
+    </section>
+
+
+
+
+
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactame</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form-->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <form action="https://formsubmit.co/camilamariel2003@hotmail.com" method="POST">
+                        <div class="user-box">
+                            <input placeholder="Nombre" type="text" name="name" required>
+                        </div>
+                        <div class="user-box">
+                            <input placeholder="Email" type="email" name="email" required>
+                        </div>
+                        <div class="user-box">
+                            <input placeholder="Mensaje" type="text" name="text" required>
+                        </div>
+                        <div>
+                            <button type="submit" class="enviar">Enviar</button>
+                        </div>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>&copy; Camila Palacios - 2022</small></div>
     </div>
 
-    <div class="footer">
-        <div class="flex-row">
-            <div class="flex-col"><p class="texto">&copy; 2022 - Camila Palacios </p></div>
-            <div class="flex-col">
-                <p><ion-icon name="mail-outline" class="iconos"></ion-icon>  camilamariel2003@hotmail.com</p>
+
+
+
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">EduGames</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">EduGames. Plataforma educativa para personas con desafios en la comprension. 
+                                    Cuenta con juegos y videos explicativos de Lengua, Matematica, Ingles, Etica, Ciencias Sociales, 
+                                    Ciencias Naturales y Educacion <a href="https://edugames-ar.web.app/">Aqui</a> podra ver la pagina.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Creacion de Contenido</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Trabaje para Parrilla 83 y Albahaca & Tomillo diseñando publicaciones 
+                                    para sus redes sociales. Ademas ayude a mi hermana mayor con su emprendimiento de venta de 
+                                    mermeladas realizandole el diseño de las etiquetas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Comunicacion</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Gracias a ORT pude participar de proyectos como "+ Sinergia", 
+                                    donde debiamos presentar nuestro proyecto final a profesores, especialistas y otros alumnos. 
+                                    Con esto pude aprender no solo a saber presentar un proyecto atrapando la atencion de los hoyentes, 
+                                    sino que tambien aprendi las etapas del mismo, los informes y la esaustiva investigacion que se debe 
+                                    hacer, como realizar un analisis de mercado para ver en que destaca tu producto del resto, y 
+                                    poder organizarme de acuerdo a determinados plazos de entrega. 
+                                </p>
+                                <video width="600" height="400" controls>
+                                    <source src="imagenes/sinergia.mp4" type="video/mp4">
+                                    <source src="imagenes/sinergia.ogv" type="video/ogg">
+                                </video>
+                                <p class="mb-4">Esta es la presentacion que realice junto a mi compañera de equipo 
+                                    para presentar nuestro Proyecto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="scripts.js"></script>
 </body>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </html>
