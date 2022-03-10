@@ -5552,6 +5552,7 @@ progress {
 
 .text-uppercase {
   text-transform: uppercase !important;
+  font-family: 'Balsamiq Sans', cursive;
 }
 
 .text-capitalize {
